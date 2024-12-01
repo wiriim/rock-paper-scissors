@@ -33,7 +33,7 @@ let computerScore = 0;
 function playRound(humanChoice, computerChoice){
     if (humanChoice == 'rock'){
         if (computerChoice == 'Rock'){
-            console.log('You drawn! Rock meets Rock');
+            console.log('You draw! Rock meets Rock');
         }else if (computerChoice == 'Paper'){
             console.log('You lose! Paper beats Rock');
             computerScore++;
