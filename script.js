@@ -69,3 +69,15 @@ function playRound(humanChoice, computerChoice){
     console.log('Your Score: ' + humanScore);
     console.log('Computer Score: ' + computerScore);
 }
+
+
+
+function playGame(){
+    for (let i = 0; i < 5; i++){
+        const humanSelection = getHumanChoice();
+        const computerSelection = getComputerChoice();
+
+        playRound(humanSelection, computerSelection);
+    }
+}
+playGame();
