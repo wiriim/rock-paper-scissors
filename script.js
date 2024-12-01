@@ -26,3 +26,46 @@ function getHumanChoice(){
     
     return humanChoice;
 }
+
+let humanScore = 0;
+let computerScore = 0;
+
+function playRound(humanChoice, computerChoice){
+    if (humanChoice == 'rock'){
+        if (computerChoice == 'Rock'){
+            console.log('You drawn! Rock meets Rock');
+        }else if (computerChoice == 'Paper'){
+            console.log('You lose! Paper beats Rock');
+            computerScore++;
+        }else if (computerChoice == 'Scissor'){
+            console.log('You win! Rock beats Scissor');
+            humanScore++;
+        }
+
+    }else if (humanChoice == 'paper'){
+        if (computerChoice == 'Rock'){
+            console.log('You win! Paper beats Rock');
+            humanScore++;
+        }else if (computerChoice == 'Paper'){
+            console.log('You draw! Paper meets Paper');
+        }else if (computerChoice == 'Scissor'){
+            console.log('You lose! Scissor beats Paper');
+            computerScore++;
+        }
+
+    }else if (humanChoice == 'scissor'){
+        if (computerChoice == 'Rock'){
+            console.log('You lose! Rock beats Scissor');
+            computerScore++;
+        }else if (computerChoice == 'Paper'){
+            console.log('You win! Scissor beats Paper');
+            humanScore++;
+        }else if (computerChoice == 'Scissor'){
+            console.log('You draw! Scissor meets Scissor');
+        }
+        
+    }
+
+    console.log('Your Score: ' + humanScore);
+    console.log('Computer Score: ' + computerScore);
+}
