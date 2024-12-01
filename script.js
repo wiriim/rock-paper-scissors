@@ -79,5 +79,13 @@ function playGame(){
 
         playRound(humanSelection, computerSelection);
     }
+
+    if (humanScore > computerScore){
+        console.log('Nice one! You won!');
+    }else if (humanScore == computerScore){
+        console.log('Not bad! You drew!');
+    }else if (humanScore < computerScore){
+        console.log("Nice try! You lost!");
+    }
 }
 playGame();
