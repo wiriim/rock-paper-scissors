@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    text-align: center;
+    height: 100vh;
+}
+
+.scoreContainer{
+    margin: 2.5rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.buttonContainer{
+    margin: 2.5rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.buttonContainer button{
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    min-width: 100px;
+    min-height: 100px;
+    border: 5px solid;
+}
+
+.buttonContainer button img{
+    max-width: 80px;
+}
